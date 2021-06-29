@@ -3,11 +3,11 @@
 ![License](https://img.shields.io/github/license/ConnectingEurope/Context-Broker-Data-Visualisation)
 ![NGSI LD](https://img.shields.io/badge/NGSI-LD-red.svg)
 
-The **Context Broker Healthy Leisure** is a **project** made up of different components that help public organizations monitor the state of their cities and recommend different leisure options in based of the data collected. The project has two components:
+The **Context Broker Healthy Leisure** is a **project** made up of different components that help public organisations monitor the state of their cities and recommend different leisure options based on the data collected. The project has two components:
 
 - **Context Broker Healthy Leisure web component**. This component allows city councils and deputations to have a real-time and historical view of leisure data. It provides the following features:
 
-    - **Real-time data** visualisation through geo-localized sensors on a map, based on the information from the **Orion LD Context Broker**.
+    - **Real-time data** visualisation through geo-localised sensors on a map, based on the information from the **Orion LD Context Broker**.
 
     - **Historical data** visualisation for the sensors in table and graph formats, taking advantage of historical data tools like **Kibana**.
 
@@ -27,7 +27,7 @@ The **Context Broker Healthy Leisure** is a **project** made up of different com
 
     The complete list of FIWARE GEs and Incubated FIWARE GEs can be found at the [FIWARE Catalogue](https://www.fiware.org/developers/catalogue/).
 
-- **Context Broker Healthy Leisure citizen app**. This component is designed so that citizens can see the leisure options of the city based on their preferences, as well as see the real time of the data.
+- **Context Broker Healthy Leisure citizen app**. This component is designed so that citizens can see the leisure options of the city based on their preferences, as well as see the realtime data.
 
 **Context Broker Healthy Leisure web component** 
 | :books: [User manual](project/doc/user/index.md) | :books: [Deployment manual](project/doc/tutorials/index.md) | :books: [Technical manual](project/doc/technical/index.md) |
