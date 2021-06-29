@@ -79,7 +79,7 @@ The deployment of the Context Broker Healthy Leisure web component, in a local e
 The following documentation is recommended to be read before starting to use the Context Broker Healthy Leisure:
 
 - [Orion LD Context Broker](https://github.com/FIWARE/context.Orion-LD)
-- [FIWARE data models](https://smartdatamodels.org)
+- [Smart data models](https://smartdatamodels.org)
 - [FIWARE lab](https://www.fiware.org/developers/fiware-lab/)
 - [NGSI LD specifications](https://www.etsi.org/deliver/etsi_gs/CIM/001_099/009/01.04.01_60/gs_cim009v010401p.pdf)
 - [NGSI LD step by step](https://ngsi-ld-tutorials.readthedocs.io/en/latest/)
