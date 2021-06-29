@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:id="@+id/Omit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ProfileMenu"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="280dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="500dp"
+        android:background="@android:color/tertiary_text_light"
+        android:elevation="5dp"
+        android:gravity="center|right"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/omit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:background="#11151515"
+            android:elevation="5dp"
+            android:padding="0dp"
+            android:text="OMIT" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Menu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/tabs_navigation"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="0dp">
+
+
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            app:srcCompat="@drawable/ic_home_black"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageButton
+            android:id="@+id/btnBeach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:src="@drawable/ic_action_beach" />
+
+        <ImageButton
+            android:id="@+id/btnBike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:src="@drawable/ic_action_bike" />
+
+        <ImageButton
+            android:id="@+id/btnStreet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:src="@drawable/ic_action_street" />
+
+        <ImageButton
+            android:id="@+id/btnLogOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:src="@drawable/logouticon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ProfileMenu"
+        android:layout_width="392dp"
+        android:layout_height="73dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#11FF9800"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="0dp">
+
+
+        <Button
+            android:id="@+id/last"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="177dp"
+            android:layout_height="73dp"
+            android:layout_gravity="center"
+            android:layout_margin="0dp"
+            android:background="#17FFE500"
+            android:padding="0dp"
+            android:text="LAST" />
+
+        <Button
+            android:id="@+id/save"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="177dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="0dp"
+            android:background="#110024ED"
+            android:padding="0dp"
+            android:text="SAVE" />
+
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/mViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.viewpager.widget.ViewPager>
+
+</RelativeLayout>

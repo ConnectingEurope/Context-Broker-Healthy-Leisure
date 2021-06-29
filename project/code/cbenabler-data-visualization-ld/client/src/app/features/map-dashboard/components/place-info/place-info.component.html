@@ -1,0 +1,111 @@
+<div class="rounded-lg bg-light overlay info mt-2 mr-3">
+    <h2 class="text-center mt-3">Information</h2>
+    <hr class="w-100">
+    <div class="container-fluid">
+        <h4 class="text-center">Playa levante</h4>
+        <div class="row">
+            <div class="container mx-4 overlay rounded-lg bg-light py-1 my-2">
+                <div class="row">
+                    <div class="col-12">
+                        <h4 class="text-left mt-2">Weather</h4>
+                    </div>
+                    <div class="col-6">
+                        <img src="data:image/png;base64,{{skyStateData.icon}}" width="33" height="33" class="float-right mt-1">
+                        <h4 class="font-weight-normal mt-2 ml-4">{{skyStateData.descriptiveSkyState}}</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <h4 class="">Temperature: </h4>
+                        <h4 class="font-weight-normal">{{skyStateData.temperature}}ºC</h4>
+                    </div>
+                    <div class="col-6">
+                        <h4 class="">Relative humidity: </h4>
+                        <h4 class="font-weight-normal">{{skyStateData.relativeHumidity}}%</h4>
+                    </div>
+                </div>               
+            </div>
+        </div>
+        <div class="row">
+            <div class="container mx-4 overlay rounded-lg bg-light py-1 my-2">
+                <div class="row">
+                    <div class="col-12 mx-auto">
+                        <h4 class="text-left mt-2">Occupation</h4>
+                    </div>
+                    <div class="col-12">
+                        <div class="mx-auto">
+                            <div class="rounded-circle float-left mb-2 mr-2"
+                            [ngClass]="{'low' : beachEntity.peopleOccupancy < 100,
+                                        'medium' : beachEntity.peopleOccupancy >=100 && beachEntity.peopleOccupancy < 200,
+                                        'high' : beachEntity.peopleOccupancy >= 200 && beachEntity.peopleOccupancy < 300}"></div>
+                            <h3 class="text-left mt-0 font-weight-normal">{{beachEntity.peopleOccupancy}}/300</h3>
+                        </div> 
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="w-100 py-2 occupancy-legend mx-4"></div>
+                </div>
+                <div class="row">
+                    <div class="col"><p>Low</p></div>
+                    <div class="col"><p class="text-center">Medium</p></div>
+                    <div class="col"><p class="text-right">High</p></div>
+                </div>                 
+            </div>
+        </div>
+        <div class="row">
+            <div class="container mx-4 overlay rounded-lg bg-light py-1 my-2">
+                <div class="row">
+                    <div class="col-12">
+                        <h4 class="text-left align-middle mt-2">Air Quality Index</h4>
+                    </div>
+                    <div class="col-12 mx-auto">
+                        <div class="rounded-circle float-left mr-2" 
+                        [ngClass]="{'very-good' : airQualityEntity.airQualityLevel=== 'very good',
+                                    'good' : airQualityEntity.airQualityLevel=== 'good',
+                                    'medium' : airQualityEntity.airQualityLevel=== 'medium',
+                                    'poor' : airQualityEntity.airQualityLevel=== 'poor',
+                                    'very-poor' : airQualityEntity.airQualityLevel=== 'very poor',
+                                    'bg-danger' : airQualityEntity.airQualityLevel=== 'extreme'}"></div>
+                        <h3 class="text-left mt-0 font-weight-normal">{{ airQualityEntity.airQualityIndex}} - {{airQualityEntity.airQualityLevel}}</h3>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col"><p class="text-center mb-0">Good</p></div>
+                    <div class="col"><p class="mb-0 ml-3">Poor</p></div>
+                </div>   
+                <div class="row">
+                    <div class="w-100 py-2 legend mx-4"></div>
+                </div>
+                <div class="row">
+                    <div class="col"><p>Very good</p></div>
+                    <div class="col"><p class="text-center">Medium</p></div>
+                    <div class="col"><p class="text-right">Very poor</p></div>
+                </div>                       
+            </div>
+        </div>
+        <!-- <div class="row mt-4">
+            <div class="container mx-4 mb-3">
+                <div class="row">
+                    <div class="col-5 overlay rounded-lg bg-light py-3 px-0 my-2 mr-auto">
+                        <h6 class="text-center mt-2 mb-3">Fire Daily Risk Index</h6>
+                        <h1 class="text-center  mt-2 font-weight-normal">12%</h1>
+                    </div>
+                    <div class="col-5 overlay rounded-lg bg-light py-3 my-2 ml-auto">
+                        <h6 class="text-center mt-2 mb-3">Litter coverage</h6>
+                        <h1 class="text-center mt-2 font-weight-normal">40%</h1>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-5 overlay rounded-lg bg-light py-3 px-0 my-2 mr-auto">
+                        <h6 class="text-center text-justify mt-2 mb-3">Smoke detected confidence</h6>
+                        <h1 class="text-center  mt-2 font-weight-normal">90%</h1>
+                    </div>
+                    <div class="col-5 overlay rounded-lg bg-light py-3 my-2 ml-auto">
+                        <h6 class="text-center text-justify mt-2 mb-3">Fire detected confidence</h6>
+                        <h1 class="text-center mt-2 font-weight-normal">87%</h1>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</div> 

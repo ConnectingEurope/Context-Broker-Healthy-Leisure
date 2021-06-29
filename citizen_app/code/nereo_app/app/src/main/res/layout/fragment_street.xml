@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools/"
+    xmlns:tools2="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StreetFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_background">
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="412dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <org.osmdroid.views.MapView
+            android:id="@+id/openmapview"
+            android:layout_width="415dp"
+            android:layout_height="207dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewDificultad"
+            android:layout_width="359dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginRight="26dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardViewDistancia">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/Dificultad"
+                    android:layout_width="169dp"
+                    android:layout_height="43dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:text="Moderado"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/dificultad"
+                    android:layout_width="169dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="DIFICULTY"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewDistancia"
+            android:layout_width="359dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/openmapview">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/Distancia"
+                    android:layout_width="169dp"
+                    android:layout_height="43dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:text="8,8km"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/Distance"
+                    android:layout_width="169dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="DISTANCE"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewPendienteAsc"
+            android:layout_width="359dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginRight="26dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardViewDificultad">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/PendienteAsc"
+                    android:layout_width="169dp"
+                    android:layout_height="43dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:text="332m"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/pendienteAsc"
+                    android:layout_width="169dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="MAX SLOPE"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewAltitud"
+            android:layout_width="359dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginRight="26dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardViewPendienteAsc">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/Altitud"
+                    android:layout_width="169dp"
+                    android:layout_height="43dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:text="147m"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/altitud"
+                    android:layout_width="169dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="MAX ALTITUDE"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

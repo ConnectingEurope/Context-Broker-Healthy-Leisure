@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools/"
+    xmlns:tools2="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BeachFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_background">
+
+        <org.osmdroid.views.MapView
+            android:id="@+id/openmapview"
+            android:layout_width="410dp"
+            android:layout_height="267dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView7" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/firstCardView"
+            android:layout_width="396dp"
+            android:layout_height="88dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/beachSpinner">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="197dp"
+                    android:layout_marginLeft="197dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="90dp"
+                    android:layout_marginRight="90dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    android:text="OCCUPATION"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/population"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ocupation"
+                    android:layout_width="61dp"
+                    android:layout_height="58dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="29dp"
+                    android:layout_marginBottom="28dp"
+                    android:background="@drawable/circle_green"
+                    android:outlineProvider="background"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/population"
+                    android:layout_width="206dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="43dp"
+                    android:layout_marginLeft="43dp"
+                    android:layout_marginEnd="44dp"
+                    android:layout_marginRight="44dp"
+                    android:layout_marginBottom="9dp"
+                    android:gravity="center"
+                    android:text="200 / 2000"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/ocupation" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewPendiente"
+            android:layout_width="190dp"
+            android:layout_height="86dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/firstCardView">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/temperatureBeach"
+                    android:layout_width="169dp"
+                    android:layout_height="43dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    android:text="19ºC"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="169dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="TEMPERATURE"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="190dp"
+            android:layout_height="84dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cardViewPendiente"
+            app:layout_constraintTop_toBottomOf="@+id/firstCardView">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/wavesBeach"
+                    android:layout_width="169dp"
+                    android:layout_height="43dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    android:text="waves state"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/wavesBeach2"
+                    android:layout_width="169dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="WAVES STATE"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView4"
+            android:layout_width="190dp"
+            android:layout_height="85dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardViewPendiente">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/waterTempBeach"
+                    android:layout_width="166dp"
+                    android:layout_height="37dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    android:text="15ºC"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/waterTempBeach2"
+                    android:layout_width="167dp"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="WATER TEMPERATURE"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView5"
+            android:layout_width="190dp"
+            android:layout_height="85dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cardView4"
+            app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/humidityBeach"
+                    android:layout_width="169dp"
+                    android:layout_height="43dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    android:text="HUMIDITY"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/humidityBeach2"
+                    android:layout_width="169dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="HUMIDITY"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView6"
+            android:layout_width="190dp"
+            android:layout_height="85dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView4">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/windBeach"
+                    android:layout_width="169dp"
+                    android:layout_height="43dp"
+                    android:gravity="center"
+                    android:text="WIND SPEED"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/windBeach2"
+                    android:layout_width="169dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="DIRECTION/WIND SPEED"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView7"
+            android:layout_width="190dp"
+            android:layout_height="85dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cardView6"
+            app:layout_constraintTop_toBottomOf="@+id/cardView5">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/airQBeach"
+                    android:layout_width="169dp"
+                    android:layout_height="43dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    android:text="WIND DIRECTION"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/AirQBeach2"
+                    android:layout_width="169dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="AIR QUALITY INDEX"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Spinner
+            android:id="@+id/beachSpinner"
+            android:layout_width="250dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

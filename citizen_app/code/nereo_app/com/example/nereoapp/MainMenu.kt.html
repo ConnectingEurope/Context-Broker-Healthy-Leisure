@@ -1,0 +1,118 @@
+<html>
+<head>
+<title>MainMenu.kt</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #808080;}
+.s3 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+MainMenu.kt</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">com.example.nereoapp</span>
+
+<span class="s1">import androidx.appcompat.app.AppCompatActivity</span>
+<span class="s1">import android.os.Bundle</span>
+<span class="s1">import android.widget.ImageButton</span>
+<span class="s1">import androidx.viewpager.widget.ViewPager</span>
+<span class="s1">import com.example.nereoapp.Adapter.PagerViewAdapter</span>
+<span class="s1">import com.example.nereoapp.Fragments.BeachFragment</span>
+
+<span class="s0">class </span><span class="s1">MainMenu : AppCompatActivity() {</span>
+    <span class="s1">private lateinit </span><span class="s0">var </span><span class="s1">mViewPager: ViewPager</span>
+    <span class="s1">private lateinit </span><span class="s0">var </span><span class="s1">btnBeach: ImageButton</span>
+    <span class="s1">private lateinit </span><span class="s0">var </span><span class="s1">btnBike: ImageButton</span>
+    <span class="s1">private lateinit </span><span class="s0">var </span><span class="s1">btnStreet: ImageButton</span>
+    <span class="s1">private lateinit </span><span class="s0">var </span><span class="s1">mPagerAdapter: PagerViewAdapter</span>
+
+    <span class="s1">override </span><span class="s0">fun </span><span class="s1">onCreate(savedInstanceState: Bundle?) {</span>
+        <span class="s0">super</span><span class="s1">.onCreate(savedInstanceState)</span>
+        <span class="s1">setContentView(R.layout.activity_main_menu)</span>
+
+        <span class="s2">// init views</span>
+
+        <span class="s1">mViewPager = findViewById(R.id.mViewPager)</span>
+
+        <span class="s2">//Buttons</span>
+        <span class="s1">btnBeach = findViewById(R.id.btnBeach)</span>
+        <span class="s1">btnBike = findViewById(R.id.btnBike)</span>
+        <span class="s1">btnStreet = findViewById(R.id.btnStreet)</span>
+
+        <span class="s1">mPagerAdapter = PagerViewAdapter(supportFragmentManager)</span>
+        <span class="s1">mViewPager.adapter = mPagerAdapter</span>
+        <span class="s1">mViewPager.offscreenPageLimit = </span><span class="s3">3</span>
+
+        <span class="s0">val </span><span class="s1">BeachFragment = BeachFragment()</span>
+
+        <span class="s2">//add page change listener</span>
+
+        <span class="s1">btnBeach.setOnClickListener {</span>
+            <span class="s1">mViewPager.currentItem = </span><span class="s3">0</span>
+        <span class="s1">}</span>
+        <span class="s1">btnBike.setOnClickListener {</span>
+            <span class="s1">mViewPager.currentItem = </span><span class="s3">1</span>
+        <span class="s1">}</span>
+        <span class="s1">btnStreet.setOnClickListener {</span>
+            <span class="s1">mViewPager.currentItem = </span><span class="s3">2</span>
+        <span class="s1">}</span>
+        <span class="s1">mViewPager.addOnPageChangeListener(</span><span class="s0">object </span><span class="s1">: ViewPager.OnPageChangeListener{</span>
+
+
+            <span class="s1">override </span><span class="s0">fun </span><span class="s1">onPageScrollStateChanged(state: Int) {</span>
+
+            <span class="s1">}</span>
+
+            <span class="s1">override </span><span class="s0">fun </span><span class="s1">onPageScrolled(</span>
+                    <span class="s1">position: Int</span><span class="s0">,</span>
+                    <span class="s1">positionOffset: Float</span><span class="s0">,</span>
+                    <span class="s1">positionOffsetPixels: Int</span>
+            <span class="s1">) {</span>
+
+            <span class="s1">}</span>
+
+            <span class="s1">override </span><span class="s0">fun </span><span class="s1">onPageSelected(position: Int) {</span>
+                <span class="s1">changingTabs(position)</span>
+            <span class="s1">}</span>
+        <span class="s1">})</span>
+
+        <span class="s2">// default tab</span>
+        <span class="s1">mViewPager.currentItem = </span><span class="s3">0</span>
+        <span class="s1">btnBeach.setImageResource(R.drawable.ic_home_pink)</span>
+
+    <span class="s1">}</span>
+    <span class="s1">private </span><span class="s0">fun </span><span class="s1">changingTabs(position: Int){</span>
+        <span class="s0">if</span><span class="s1">(position == </span><span class="s3">0</span><span class="s1">){</span>
+            <span class="s1">activateBeach()</span>
+
+        <span class="s1">}</span>
+        <span class="s0">if</span><span class="s1">(position == </span><span class="s3">1</span><span class="s1">){</span>
+            <span class="s1">activateBike()</span>
+        <span class="s1">}</span>
+        <span class="s0">if</span><span class="s1">(position == </span><span class="s3">2</span><span class="s1">){</span>
+            <span class="s1">activateStreet()</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+    <span class="s1">private </span><span class="s0">fun </span><span class="s1">activateBeach(){</span>
+        <span class="s1">btnBeach.setImageResource(R.drawable.ic_home_pink)</span>
+        <span class="s1">btnBike.setImageResource(R.drawable.ic_search_black)</span>
+        <span class="s1">btnStreet.setImageResource(R.drawable.ic_notifications_black)</span>
+    <span class="s1">}</span>
+    <span class="s1">private </span><span class="s0">fun </span><span class="s1">activateBike(){</span>
+        <span class="s1">btnBeach.setImageResource(R.drawable.ic_home_black)</span>
+        <span class="s1">btnBike.setImageResource(R.drawable.ic_search_pink)</span>
+        <span class="s1">btnStreet.setImageResource(R.drawable.ic_notifications_black)</span>
+    <span class="s1">}</span>
+    <span class="s1">private </span><span class="s0">fun </span><span class="s1">activateStreet(){</span>
+        <span class="s1">btnBeach.setImageResource(R.drawable.ic_home_black)</span>
+        <span class="s1">btnBike.setImageResource(R.drawable.ic_search_black)</span>
+        <span class="s1">btnStreet.setImageResource(R.drawable.ic_notifications_pink)</span>
+    <span class="s1">}</span>
+<span class="s1">}</span></pre>
+</body>
+</html>

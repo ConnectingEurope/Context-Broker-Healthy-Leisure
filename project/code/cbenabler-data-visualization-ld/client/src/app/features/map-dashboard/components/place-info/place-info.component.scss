@@ -1,0 +1,49 @@
+.overlay{
+    z-index: 1000!important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.info{
+    position: absolute!important;
+    right: 0!important;
+    max-height: 90vh!important;
+    width: fit-content;
+    overflow-x: hidden; 
+    overflow-y: auto; 
+}
+.rounded-circle{
+    height: 33px;
+    width: 33px;
+}
+.legend{
+    background: rgb(1,153,1);
+    background: linear-gradient(90deg, rgba(1,153,1,1) 0%, rgba(139,197,74,1) 25%, rgba(226,211,22,1) 50%, rgba(255,203,103,1) 75%, rgba(255,154,0,1) 100%);
+}
+.occupancy-legend{
+    background: rgb(40,167,69);
+    background: linear-gradient(90deg, rgba(40,167,69,1) 0%, rgba(255,193,7,1) 50%, rgba(220,53,69,1) 100%);
+}
+.very-good{
+    background-color: rgb(1,153,1);
+}
+.good{
+    background-color: rgb(139,197,74);
+}
+.medium{
+    background-color: rgb(226,211,22);
+}
+.poor{
+    background-color: rgb(255,203,103);
+}
+.very-poor{
+    background-color: rgb(255,154,0);
+}
+
+.low{
+    background-color: rgb(40,167,69);
+}
+.medium{
+    background-color: rgba(255,193,7);
+}
+.high{
+    background-color: rgb(220,53,69);
+}

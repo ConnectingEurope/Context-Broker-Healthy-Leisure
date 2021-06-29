@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>PagerViewAdapter.kt</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+PagerViewAdapter.kt</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">com.example.nereoapp.Adapter</span>
+
+<span class="s1">import androidx.fragment.app.Fragment</span>
+<span class="s1">import androidx.fragment.app.FragmentManager</span>
+<span class="s1">import androidx.fragment.app.FragmentPagerAdapter</span>
+<span class="s1">import com.example.nereoapp.Fragments.*</span>
+
+<span class="s1">internal </span><span class="s0">class </span><span class="s1">PagerViewAdapter(fm:FragmentManager?):</span>
+        <span class="s1">FragmentPagerAdapter(fm!!){</span>
+    <span class="s1">override </span><span class="s0">fun </span><span class="s1">getItem(position: Int): Fragment {</span>
+
+        <span class="s0">return when</span><span class="s1">(position){</span>
+            <span class="s2">0 </span><span class="s1">-&gt; {</span>
+                <span class="s1">BeachFragment()</span>
+            <span class="s1">}</span>
+            <span class="s2">1 </span><span class="s1">-&gt; {</span>
+                <span class="s1">BikeFragment()</span>
+            <span class="s1">}</span>
+            <span class="s2">2 </span><span class="s1">-&gt; {</span>
+                <span class="s1">StreetFragment()</span>
+            <span class="s1">}</span>
+            <span class="s0">else </span><span class="s1">-&gt; BeachFragment()</span>
+        <span class="s1">}</span>
+
+    <span class="s1">}</span>
+
+    <span class="s1">override </span><span class="s0">fun </span><span class="s1">getCount(): Int {</span>
+
+        <span class="s0">return </span><span class="s2">3</span>
+    <span class="s1">}</span>
+<span class="s1">}</span></pre>
+</body>
+</html>

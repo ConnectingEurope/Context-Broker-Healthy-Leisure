@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="409dp"
+            android:layout_height="76dp"
+            android:layout_marginTop="72dp"
+            android:gravity="center"
+            android:text="ORDER YOUR PREFERENCES"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="414dp"
+            android:layout_height="307dp"
+            android:layout_marginTop="52dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="390dp"
+            android:layout_height="155dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="11dp"
+            android:gravity="center"
+            android:text="TO KNOW OUR RECOMMENDATION CONSIDERING YOUR ACTIVITY ORDER PREFERENCES PICK           SAVE BUTTON
+            \n\n             TO USE LAST ORDER PREFERENCE PICK LAST
+            \n\nTO KNOW OUR ACTIVITY RECOMMENDATION PICK OMIT BUTTON"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

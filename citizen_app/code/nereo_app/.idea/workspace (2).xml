@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:cmontaes" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:ainfantp" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:cmontaes" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1894aa6f-6d6d-4982-afc2-e7821ae88602" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/debug/res/values/google_maps_api.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/nereo_app/BeachMapsFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_home_black.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_home_pink.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_info_black.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_info_pink.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_notifications_black.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_notifications_pink.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_person_black.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_person_pink.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_search_black.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_search_pink.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tabs_navigation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_beach_maps.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/release/res/values/google_maps_api.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nereoapp/app/src/main/java/com/example/nereoapp/MainMenu.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nereoapp/app/src/main/res/drawable-v24/platjallevant.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nereoapp/app/src/main/res/layout/activity_main_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nereoapp/app/src/main/res/layout/fragment_beach.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nereoapp/app/src/main/res/layout/fragment_bike.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nereoapp/app/src/main/res/layout/fragment_street.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nereoapp/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../nereoapp/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nereoapp/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../nereoapp/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nereoapp/app/src/main/java/com/example/nereoapp/Adapter/PagerViewAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../nereoapp/app/src/main/java/com/example/nereoapp/Adapter/PagerViewAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nereoapp/app/src/main/java/com/example/nereoapp/Fragments/HomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../nereoapp/app/src/main/java/com/example/nereoapp/Fragments/BeachFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nereoapp/app/src/main/java/com/example/nereoapp/Fragments/NotificationsFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nereoapp/app/src/main/java/com/example/nereoapp/Fragments/ProfileFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../nereoapp/app/src/main/java/com/example/nereoapp/Fragments/BikeFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nereoapp/app/src/main/java/com/example/nereoapp/Fragments/SearchFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../nereoapp/app/src/main/java/com/example/nereoapp/Fragments/StreetFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nereoapp/app/src/main/java/com/example/nereoapp/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../nereoapp/app/src/main/java/com/example/nereoapp/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nereoapp/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../nereoapp/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nereoapp/app/src/main/res/layout/fragment_home.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nereoapp/app/src/main/res/layout/fragment_notifications.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nereoapp/app/src/main/res/layout/fragment_profile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nereoapp/app/src/main/res/layout/fragment_search.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1p0teXwdrmBwErV5QCf6Wlo2hVO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$PROJECT_DIR$/../AppData/Local/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Dependencies" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="android.template.504587555">
+      <recent name="com.example.nereo_app" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\cmontaes\Nereo_app\Nereo_app1\app\src\main\res\drawable" />
+    </key>
+    <key name="android.template.-394496602">
+      <recent name="com.example.nereo_app" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="Nereo_app.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1894aa6f-6d6d-4982-afc2-e7821ae88602" name="Default Changelist" comment="" />
+      <created>1614331930324</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614331930324</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="568" y="227" key="#Notifications" timestamp="1614335883006">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="568" y="227" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1614335883006" />
+    <state x="200" y="110" key="#PSD" timestamp="1614549562720">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="200" y="110" key="#PSD/0.0.1366.728@0.0.1366.728" timestamp="1614549562720" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1614589407923">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1614589407923" />
+    <state width="661" height="136" key="GridCell.Tab.0.bottom" timestamp="1614547628032">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="661" height="136" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1614547628032" />
+    <state width="661" height="136" key="GridCell.Tab.0.center" timestamp="1614547628032">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="661" height="136" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1614547628032" />
+    <state width="661" height="136" key="GridCell.Tab.0.left" timestamp="1614547628032">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="661" height="136" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1614547628032" />
+    <state width="661" height="136" key="GridCell.Tab.0.right" timestamp="1614547628032">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="661" height="136" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1614547628032" />
+    <state x="184" y="9" key="SettingsEditor" timestamp="1614549261738">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1614549261738" />
+    <state x="290" y="108" key="psd.add.library.dependency.panel.dimension" timestamp="1614549529266">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="290" y="108" key="psd.add.library.dependency.panel.dimension/0.0.1366.728@0.0.1366.728" timestamp="1614549529266" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1614592679016">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1614592679016" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1614550377543">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1614550377543" />
+  </component>
+</project>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">nereo app</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="calles">
+        <item>Av. Comunitat Valenciana</item>
+        <item>Av. del Mediterraneo</item>
+        <item>Av. Europa</item>
+    </string-array>
+    <string-array name="rutas">
+        <item>Ruta Bancos Benidorm Te Espera</item>
+        <item>Ruta Cine Cuentame como paso</item>
+        <item>Benidorm los 10 rascacielos mas altos</item>
+    </string-array>
+    <string-array name="playas">
+        <item>PLAYA DE LEVANTE</item>
+        <item>PLAYA DE PONIENTE</item>
+    </string-array>
+</resources>

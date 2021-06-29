@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>BikeFragment.kt</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6897bb;}
+.s3 { color: #808080;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+BikeFragment.kt</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">com.example.nereoapp.Fragments</span>
+
+<span class="s1">import android.os.Bundle</span>
+<span class="s1">import androidx.fragment.app.Fragment</span>
+<span class="s1">import android.view.LayoutInflater</span>
+<span class="s1">import android.view.View</span>
+<span class="s1">import android.view.ViewGroup</span>
+<span class="s1">import com.example.nereoapp.R</span>
+<span class="s1">import kotlinx.android.synthetic.main.fragment_bike.*</span>
+<span class="s1">import org.osmdroid.util.GeoPoint</span>
+<span class="s1">import org.osmdroid.views.MapController</span>
+<span class="s1">import org.osmdroid.views.MapView</span>
+
+<span class="s0">class </span><span class="s1">BikeFragment : Fragment() {</span>
+    <span class="s1">private lateinit </span><span class="s0">var </span><span class="s1">myOpenMapView: MapView</span>
+    <span class="s1">private lateinit </span><span class="s0">var </span><span class="s1">myMapController: MapController</span>
+    <span class="s1">private </span><span class="s0">var </span><span class="s1">Bike = GeoPoint(</span><span class="s2">38.5350154</span><span class="s0">, </span><span class="s1">-</span><span class="s2">0.1171847</span><span class="s1">)</span>
+
+
+    <span class="s1">override </span><span class="s0">fun </span><span class="s1">onCreate(savedInstanceState: Bundle?) {</span>
+        <span class="s0">super</span><span class="s1">.onCreate(savedInstanceState)</span>
+        <span class="s1">myOpenMapView = openmapview </span><span class="s0">as </span><span class="s1">MapView</span>
+        <span class="s1">myOpenMapView.setBuiltInZoomControls(</span><span class="s0">true</span><span class="s1">)</span>
+        <span class="s1">myMapController= myOpenMapView.getController() </span><span class="s0">as </span><span class="s1">MapController</span>
+        <span class="s1">myMapController.setCenter(Bike)</span>
+        <span class="s1">myMapController.setZoom(</span><span class="s2">6</span><span class="s1">)</span>
+        <span class="s1">myOpenMapView.setMultiTouchControls(</span><span class="s0">true</span><span class="s1">)</span>
+
+    <span class="s1">}</span>
+    <span class="s1">override </span><span class="s0">fun </span><span class="s1">onCreateView(inflater: LayoutInflater</span><span class="s0">, </span><span class="s1">container: ViewGroup?</span><span class="s0">,</span>
+                              <span class="s1">savedInstanceState: Bundle?): View? {</span>
+        <span class="s3">// Inflate the layout for this fragment</span>
+        <span class="s0">return </span><span class="s1">inflater.inflate(R.layout.fragment_bike</span><span class="s0">, </span><span class="s1">container</span><span class="s0">, false</span><span class="s1">)</span>
+    <span class="s1">}</span>
+<span class="s1">}</span></pre>
+</body>
+</html>

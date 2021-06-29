@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>MainActivity.kt</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+MainActivity.kt</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">com.example.nereoapp</span>
+
+<span class="s1">import android.content.Intent</span>
+<span class="s1">import androidx.appcompat.app.AppCompatActivity</span>
+<span class="s1">import android.os.Bundle</span>
+<span class="s1">import android.widget.Button</span>
+<span class="s1">import android.widget.EditText</span>
+<span class="s1">import android.widget.ImageButton</span>
+<span class="s1">import android.widget.Toast</span>
+<span class="s1">import androidx.viewpager.widget.ViewPager</span>
+<span class="s1">import com.example.nereoapp.Adapter.PagerViewAdapter</span>
+<span class="s1">import com.example.nereoapp.Fragments.BeachFragment</span>
+<span class="s1">import com.example.nereoapp.Fragments.BikeFragment</span>
+<span class="s1">import com.example.nereoapp.Fragments.StreetFragment</span>
+
+
+
+<span class="s0">class </span><span class="s1">MainActivity : AppCompatActivity() {</span>
+    <span class="s1">private lateinit </span><span class="s0">var </span><span class="s1">mViewPager: ViewPager</span>
+    <span class="s1">private lateinit </span><span class="s0">var </span><span class="s1">btnBeach: ImageButton</span>
+    <span class="s1">private lateinit </span><span class="s0">var </span><span class="s1">btnBike: ImageButton</span>
+    <span class="s1">private lateinit </span><span class="s0">var </span><span class="s1">btnStreet: ImageButton</span>
+    <span class="s1">private lateinit </span><span class="s0">var </span><span class="s1">mPagerAdapter: PagerViewAdapter</span>
+
+    <span class="s1">override </span><span class="s0">fun </span><span class="s1">onCreate(savedInstanceState: Bundle?) {</span>
+        <span class="s0">super</span><span class="s1">.onCreate(savedInstanceState)</span>
+        <span class="s1">setContentView(R.layout.activity_main)</span>
+
+        <span class="s0">val </span><span class="s1">button = findViewById&lt;Button&gt;(R.id.button)</span>
+        <span class="s1">button?.setOnClickListener() {</span>
+
+            <span class="s0">val </span><span class="s1">user = findViewById&lt;EditText&gt;(R.id.user)</span>
+            <span class="s0">val </span><span class="s1">password = findViewById&lt;EditText&gt;(R.id.password)</span>
+
+            <span class="s0">if </span><span class="s1">(user.text.toString() == </span><span class="s2">&quot;admin&quot; </span><span class="s1">&amp;&amp; password.text.toString() == </span><span class="s2">&quot;admin&quot;</span><span class="s1">) {</span>
+                <span class="s0">val </span><span class="s1">intent = Intent(</span><span class="s0">this, </span><span class="s1">MainMenu::</span><span class="s0">class</span><span class="s1">.java)</span>
+                <span class="s1">startActivity(intent)</span>
+            <span class="s1">} </span><span class="s0">else </span><span class="s1">{</span>
+                <span class="s1">Toast.makeText(</span><span class="s0">this</span><span class="s1">@MainActivity</span><span class="s0">, </span><span class="s2">&quot;Incorrect user or password&quot;</span><span class="s0">, </span><span class="s1">Toast.LENGTH_LONG).show()</span>
+                <span class="s1">user.getText().clear()</span>
+                <span class="s1">password.getText().clear()</span>
+            <span class="s1">}</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+<span class="s1">}</span></pre>
+</body>
+</html>
