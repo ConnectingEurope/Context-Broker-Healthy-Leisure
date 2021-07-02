@@ -3,7 +3,6 @@
 ![License](https://img.shields.io/github/license/ConnectingEurope/Context-Broker-Data-Visualisation)
 ![NGSI LD](https://img.shields.io/badge/NGSI-LD-red.svg)
 
-**The CEF programme activities supporting Context Broker implementations have concluded. All documentation and code will remain available and reusable for all. However support questions will no longer be monitored on this repository.**
 
 The **Context Broker Healthy Leisure** is a **project** made up of different components that help public organisations monitor the state of their cities and recommend different leisure options based on the data collected. The project has two components:
 
