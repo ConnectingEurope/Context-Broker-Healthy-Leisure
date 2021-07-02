@@ -3,6 +3,7 @@
 ![License](https://img.shields.io/github/license/ConnectingEurope/Context-Broker-Data-Visualisation)
 ![NGSI LD](https://img.shields.io/badge/NGSI-LD-red.svg)
 
+**Please note that support questions will not be monitored during the summer period of July and August. **
 
 The **Context Broker Healthy Leisure** is a **project** made up of different components that help public organisations monitor the state of their cities and recommend different leisure options based on the data collected. The project has two components:
 
